@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: #26817D;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  margin: 10px 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  color: rgb(0, 30, 30);
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-btn {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('../public/funnel.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #26817D;
+  cursor: pointer;
+}
+
+ul {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin: 5px;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.check-input, .add-img {
+  margin: 5px 20px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+}
+
+li p {
+  margin: 10px;
+}
+
+.list-title {
+  font-size: 1.2em;
+}
+
+.list-description {
+  color: rgb(118, 114, 114);
+}
+
+.add-item-form {
+  display: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.form-container {
+  display: absolute;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #979797;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid #979797;
+}
+
+.title-input {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.form-buttons button:hover {
+  background-color: #d3cbcb;
+}
+
+.cancel-btn {
+  color: #4e4b4b;
+}
+
+.add-btn {
+  color: #26817D;
 }

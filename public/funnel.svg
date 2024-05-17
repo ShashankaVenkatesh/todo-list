@@ -1,0 +1,18 @@
+<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500px" height="500px">
+  <style>
+    line {
+      stroke: #ffffff;
+      stroke-width: 50;
+    }
+  </style>
+  <!-- extract -->
+  <line x1="100" y1="100" x2="400" y2="100" stroke-linecap="round" />
+
+  <!-- transform -->
+  <line x1="100" y1="100" x2="250" y2="300" stroke-linecap="round" />
+  <line x1="400" y1="100" x2="250" y2="300" stroke-linecap="round" />
+
+  <!-- load -->
+  <line x1="240" y1="290" x2="240" y2="420" />
+  <line x1="260" y1="290" x2="260" y2="420" />
+</svg>
